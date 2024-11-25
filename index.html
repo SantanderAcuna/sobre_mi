@@ -1,95 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre Mi</title>
+    <title>Sobre Mí</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header>
       <nav>
+        <div id="logo" class="logo">
+          <p>Logo</p>
+          <img src="yo.jpg" width="50" alt="Logo Personal" />
+        </div>
         <ul>
-          <li>
-            <a href="#sobre mi">Sobre mi</a>
-          </li>
-          <li>
-            <a href="#pasatiempos">Pasa tiempos</a>
-          </li>
-          <li>
-            <a href="#contacto">Contacto</a>
-          </li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#pasatiempos">Pasatiempos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1>Mi hoja de vida</h1>
-      <section id="Sobre mi" class="Sobre mi">
-        <h2>Sobre mi</h2>
+      <section id="sobre-mi">
+        <h1>Mi hoja de vida</h1>
+        <h2>Sobre mí</h2>
         <img src="yo.jpg" alt="Mi foto" width="300" height="300" />
         <p>
-          Mi nombre es Jose acuña polo, estudiante de ingenieria de sistemas en
-          la univerisdad cun, tengo 39 años, me gusta la tecnoligia en cuanto a
-          lo que es el backend, para este ado he utilizado lenguajes como php y
-          el framewor laravel para construir aplicaciones sencillas, he
-          trabajado de manera independiente para empresas como ciclo taller 4
-          esquina, el distribuidor de tigo conmovil y la alcaldia de fundacion.
+          ¡Hola! Mi nombre es José Acuña Polo, estudiante de Ingeniería de
+          Sistemas en la Universidad CUN. A mis 39 años, he desarrollado una
+          sólida pasión por la tecnología, especialmente en el área de
+          desarrollo backend. A lo largo de mi trayectoria, he trabajado con
+          tecnologías como PHP y Laravel.
         </p>
-        <a href="https://www.facebook.com/?locale=es_LA"
-          ><i class="fab fa-facebook"></i>Facebook</a
-        >
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://www.Gmail.com/">Gmail</a>
+        <ul>
+          <li>Ciclo Taller 4 Esquina</li>
+          <li>Distribuidor Tigo Conmovil</li>
+          <li>Alcaldía de Fundación</li>
+        </ul>
+        <p>
+          Estoy comprometido con el aprendizaje continuo y la mejora constante
+          en mi campo.
+        </p>
+        <div>
+          <a href="https://www.facebook.com/?locale=es_LA">Facebook</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.Gmail.com/">Gmail</a>
+        </div>
       </section>
 
-      <section id="habilidades" class="habilidades">
+      <section id="pasatiempos">
         <h2>Pasatiempos</h2>
-
-        <h3>Hobbys</h3>
+        <h3>Hobbies</h3>
         <ul>
-          <li>
-            <a href="#">Tocar guitarra</a>
-          </li>
-          <li>
-            <a href="#">Escuchar musica</a>
-          </li>
-          <li>
-            <a href="#">Jugar basket ball</a>
-          </li>
+          <li>Tocar guitarra</li>
+          <li>Escuchar música</li>
+          <li>Jugar baloncesto</li>
         </ul>
-
-        <h3>Tareas pendientes</h3>
-
+        <h3>Tareas Pendientes</h3>
         <ol>
-          <li>
-            <a href="#">Leer un libro</a>
-          </li>
-
-          <li>
-            <a href="#">Aprender Programacion</a>
-          </li>
-          <li>
-            <a href="#">Aprender ingles</a>
-          </li>
+          <li>Leer un libro</li>
+          <li>Aprender programación</li>
+          <li>Aprender inglés</li>
         </ol>
 
-        <table class="table">
+        <h3>Agenda Semanal</h3>
+        <table>
           <thead>
             <tr>
-              <th>Dia</th>
+              <th>Día</th>
               <th>Lunes</th>
               <th>Martes</th>
-              <th>Miercoles</th>
+              <th>Miércoles</th>
               <th>Jueves</th>
               <th>Viernes</th>
-              <th>Sabados</th>
+              <th>Sábado</th>
               <th>Domingo</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th>1</th>
+              <td>1</td>
               <td>Libre</td>
               <td>Libre</td>
               <td>Libre</td>
@@ -99,18 +90,18 @@
               <td>Libre</td>
             </tr>
             <tr>
-              <th>2</th>
+              <td>2</td>
               <td>Libre</td>
               <td>Libre</td>
               <td>Libre</td>
               <td>Libre</td>
               <td>Libre</td>
               <td>Libre</td>
-              <td>Aprender Programacion</td>
+              <td>Aprender programación</td>
             </tr>
             <tr>
-              <th>3</th>
-              <td>Aprender ingles</td>
+              <td>3</td>
+              <td>Aprender inglés</td>
               <td>Libre</td>
               <td>Libre</td>
               <td>Libre</td>
@@ -122,45 +113,49 @@
         </table>
       </section>
 
-      <section id="#contacto" class="contacto">
-        <h2>Contactame</h2>
-        <form action="">
+      <section id="contacto">
+        <h2>Contáctame</h2>
+        <form>
           <label for="nombre">Nombre</label>
           <input
             type="text"
             id="nombre"
             name="nombre"
             placeholder="Nombre completo"
+            required
           />
           <br />
-          <label for="nombre">Correo electronico</label>
+          <label for="email">Correo Electrónico</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Correo electronico"
+            placeholder="Correo electrónico"
+            required
           />
           <br />
-          <label for="nombre">Numero de contacto</label>
+          <label for="telefono">Número de Contacto</label>
           <input
-            type="number"
+            type="tel"
             id="telefono"
             name="telefono"
-            placeholder="Numero de contacto"
+            placeholder="Número de contacto"
           />
           <br />
           <textarea
             name="mensaje"
             id="mensaje"
-            placeholder="Mensaje"
+            placeholder="Escribe tu mensaje"
+            required
           ></textarea>
           <br />
           <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
+
     <footer>
-      <p>Todos los derechos reservados 2024</p>
+      <p>© Todos los derechos reservados 2024</p>
     </footer>
   </body>
 </html>
